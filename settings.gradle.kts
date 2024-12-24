@@ -20,4 +20,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "SkyCast"
-include ':app'
+include(":app")
