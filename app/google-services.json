@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "103310626425",
+    "project_id": "sky-cast-b308a",
+    "storage_bucket": "sky-cast-b308a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103310626425:android:8b6f63dbdcbf22907acea8",
+        "android_client_info": {
+          "package_name": "com.example.skycast"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7_r80FUlU-YQWJbn1Ei7IiitvBz3BCFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

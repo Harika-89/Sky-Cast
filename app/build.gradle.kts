@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -11,6 +12,7 @@ android {
     defaultConfig {
         applicationId = "com.example.skycast"
         minSdk = 24
+        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -50,6 +52,8 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.play.services.location)
+    implementation(libs.firebase.auth.ktx)
+    implementation(libs.firebase.firestore.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -71,15 +75,16 @@ dependencies {
     implementation (libs.androidx.material)
     implementation (libs.androidx.foundation)
 
-    // Material3 dependencies
     implementation (libs.androidx.material3.v120)
-    // Compose UI and Foundation libraries
+
     implementation (libs.androidx.ui.v140)
     implementation (libs.androidx.foundation.v140)
     implementation (libs.androidx.lifecycle.runtime.compose)
 
-    // Other required dependencies
     implementation (libs.androidx.activity.compose.v180)
 
+    // FireBase
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
 
 }

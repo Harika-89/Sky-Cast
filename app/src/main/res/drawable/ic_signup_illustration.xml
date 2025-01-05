@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#FFE0B2"
+        android:pathData="M50,0 A50,50 0 1,0 50,100 A50,50 0 1,0 50,0" />
+
+    <!-- Icon Body -->
+    <path
+        android:fillColor="#FF7043"
+        android:pathData="M50,30 C58,30 65,37 65,45 C65,53 58,60 50,60 C42,60 35,53 35,45 C35,37 42,30 50,30 Z" />
+
+    <!-- Icon Head -->
+    <path
+        android:fillColor="#FF7043"
+        android:pathData="M50,15 A10,10 0 1,1 50,35 A10,10 0 1,1 50,15" />
+</vector>
